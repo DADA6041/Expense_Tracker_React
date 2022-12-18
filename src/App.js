@@ -25,10 +25,14 @@ function App() {
     },
   ];
 
+  function handleAddExpense(expenses) {
+    console.log(expenses);
+  }
+
   return (
     <div>
       <h2>hello world</h2>
-      <NewExpense />
+      <NewExpense onAddExpense={handleAddExpense} />
       <Expenses expenses={expenses} />
     </div>
   );

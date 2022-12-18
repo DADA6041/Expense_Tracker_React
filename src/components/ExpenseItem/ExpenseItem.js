@@ -13,13 +13,13 @@ export default function ExpenseItem(props) {
   }
 
   return (
-    <Card className='expense-item'>
+    <Card className="expense-item">
       <ExpenseDate date={props.date} />
-      <div className='expense-item-desc'>
+      <div className="expense-item-desc">
         <h2>{title}</h2>
-        <div className='expense-item-price'>${props.amount}</div>
+        <div className="expense-item-price">${props.amount}</div>
       </div>
-      <button onClick={handleClick}>Change Title</button>
+      <button  onClick={handleClick}>Change Title</button>
     </Card>
   );
 }
